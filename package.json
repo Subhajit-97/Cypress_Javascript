@@ -1,0 +1,25 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "// each describe block may have multiple it block , and each it block represents each test\r Spec file(cy.js) --> describe blocks (test suite) --> it blocks (testcase) --> test steps",
+  "main": "e2e.js",
+  "scripts": {
+    "test-chrome-all": "npx cypress run --browser chrome --headed",
+    "test-edge-all": "npx cypress run --browser edge --headed"
+  },
+  "author": "Subhajit",
+  "license": "ISC",
+  "dependencies": {
+    "cypress-parallel": "^0.14.0",
+    "cypress-xpath": "^2.0.1"
+  },
+  "devDependencies": {
+    "cypress": "^13.15.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "node-xlsx": "^0.24.0",
+    "xlsx": "^0.20.2"
+  }
+}
