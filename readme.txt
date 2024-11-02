@@ -11,7 +11,7 @@ npm run test-chrome-all --> Custom command, run all the test cases in chrome wit
 node parallel-runner.js --> To run all the test cases in parallel mode
 node generate-report.js --> To generate merge report
 node file-runner.js --> You can select which test case you want to run by making file-config.json files mentioned testcases "Yes" & "No"
-node file-runner-parallel --> you can run multiple testcases in both sequential and parallel mode with single and multiple instances respectively
+node file-runner-parallel.js --> you can run multiple testcases in both sequential and parallel mode with single and multiple instances respectively
 --------------------------------------------------------------------------------
 Locators --> only supports css selector & Xpath (need to add plugin, if we want to use xpath)
 css selector --> tag#id, tag.class, tag[attribute='value'], tag.class[attribute='value']

@@ -45,3 +45,37 @@ describe("Login Test Using Excel Data", () => {
     });
   });
 });
+
+//// The below code will fetch data from excel row wise, 2nd row , 3rd row like that.
+
+// describe("Login Test Using Excel Data", () => {
+//   const excelFilePath = "cypress/fixtures/loginData.xlsx"; // Path to your Excel file
+//   const sheetName = "Sheet1"; // Name of the sheet with login data
+
+//   before(() => {
+//     // Fetch Excel data before running tests
+//     cy.task("readExcelData", { filePath: excelFilePath, sheetName }).then(
+//       (data) => {
+//         cy.wrap(data).as("loginData");
+//       }
+//     );
+//   });
+
+//   it("Logs in using data from Excel file", function () {
+//     cy.get("@loginData").then((loginData) => {
+//       loginData.forEach((data) => {
+//         // Replace with your login page URL
+//         cy.visit("/login");
+
+//         // Use selectors that match your login page’s HTML structure
+//         cy.get('input[name="username"]').type(data.username);
+//         cy.get('input[name="password"]').type(data.password);
+//         cy.get('button[type="submit"]').click();
+
+//         // Add assertions to verify login success
+//         cy.url().should("contain", "/dashboard"); // Modify as needed
+//         cy.go("back"); // Go back to the login page for the next test
+//       });
+//     });
+//   });
+// });
