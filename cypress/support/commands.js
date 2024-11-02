@@ -33,5 +33,7 @@ Cypress.Commands.add("loginapp", (username, password, expected) => {
   login.typeUserName(username);
   login.typePassWord(password);
   login.submitBtn();
-  cy.get("span").contains(expected); //assertion
+  cy.get(
+    "a[class='oxd-main-menu-item active']> span[class='oxd-text oxd-text--span oxd-main-menu-item--name']"
+  ).should("have.text", expected); //assertion
 });

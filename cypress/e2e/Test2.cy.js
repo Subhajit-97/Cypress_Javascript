@@ -30,7 +30,9 @@ describe("Fetch data fromJson file", () => {
       login.typeUserName(loginData.username);
       login.typePassWord(loginData.userpassword);
       login.submitBtn();
-      cy.get("span").contains(loginData.expected); //assertion
+      cy.get(
+        "a[class='oxd-main-menu-item active']> span[class='oxd-text oxd-text--span oxd-main-menu-item--name']"
+      ).contains(loginData.expected); //assertion
     });
   });
 });

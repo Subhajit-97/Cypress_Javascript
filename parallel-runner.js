@@ -1,37 +1,3 @@
-// // parallel-runner.js
-// const { exec } = require("child_process");
-// const fs = require("fs");
-// const path = require("path");
-
-// // Read all spec files
-// const specsDir = "./cypress/e2e";
-// const allSpecs = fs
-//   .readdirSync(specsDir)
-//   .map((file) => path.join(specsDir, file));
-
-// // Define the number of parallel instances
-// const numInstances = 3; // Adjust as needed
-// const specsPerInstance = Math.ceil(allSpecs.length / numInstances);
-
-// // Split specs for each instance and run Cypress for each
-// for (let i = 0; i < numInstances; i++) {
-//   const specs = allSpecs.slice(
-//     i * specsPerInstance,
-//     (i + 1) * specsPerInstance
-//   );
-//   const command = `npx cypress run --spec "${specs.join(
-//     ","
-//   )}" --browser chrome --headed --reporter mochawesome --reporter-options "reportDir=cypress/Results,overwrite=false,html=true,json=true`;
-
-//   // Execute the command in a separate process
-//   exec(command, (error, stdout, stderr) => {
-//     if (error) {
-//       console.error(`Error executing instance ${i + 1}:`, error);
-//     }
-//     console.log(stdout);
-//     console.error(stderr);
-//   });
-// }
 const { exec } = require("child_process");
 const fs = require("fs");
 const path = require("path");

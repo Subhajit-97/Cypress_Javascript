@@ -1,8 +1,8 @@
 
 {
   "username": "Admin",
-  "userpassword": "Admin123",
-  "expected": "Admin"
+  "userpassword": "admin123",
+  "expected": "Dashboard"
 }
 
 

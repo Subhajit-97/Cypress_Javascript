@@ -1,0 +1,8 @@
+{
+  "testFiles": [
+    { "file": "cypress/e2e/Test1.cy.js", "run": "Yes" },
+    { "file": "cypress/e2e/Test2.cy.js", "run": "Yes" },
+    { "file": "cypress/e2e/Test3.cy.js", "run": "Yes" }
+  ]
+}
+
