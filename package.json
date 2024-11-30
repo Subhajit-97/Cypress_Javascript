@@ -4,8 +4,9 @@
   "description": "// each describe block may have multiple it block , and each it block represents each test\r Spec file(cy.js) --> describe blocks (test suite) --> it blocks (testcase) --> test steps",
   "main": "e2e.js",
   "scripts": {
-    "test-chrome-all": "npx cypress run --browser chrome --headed",
-    "test-edge-all": "npx cypress run --browser edge --headed"
+    "test-chrome-all-headed": "npx cypress run --browser chrome --headed",
+    "test-chrome-all-headless": "npx cypress run --browser chrome --headless",
+    "test-edge-all-headed": "npx cypress run --browser edge --headed"
   },
   "author": "Subhajit",
   "license": "ISC",

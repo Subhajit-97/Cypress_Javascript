@@ -17,7 +17,7 @@ module.exports = defineConfig({
     json: false,
     overwrite: false,
     code: false,
-    autoOpen: true,
+    autoOpen: false,
     embeddedScreenshots: true,
     inlineAssets: true,
     saveAllAttempts: true,
