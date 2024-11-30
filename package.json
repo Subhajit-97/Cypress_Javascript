@@ -7,6 +7,7 @@
     "test-chrome-all-headed": "npx cypress run --browser chrome --headed",
     "test-chrome-all-headless": "npx cypress run --browser chrome --headless",
     "test-edge-all-headed": "npx cypress run --browser edge --headed"
+    
   },
   "author": "Subhajit",
   "license": "ISC",
