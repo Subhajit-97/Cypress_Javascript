@@ -21,6 +21,7 @@ module.exports = defineConfig({
     embeddedScreenshots: true,
     inlineAssets: true,
     saveAllAttempts: true,
+    jenkinsMode: true,
   },
   e2e: {
     setupNodeEvents(on, config) {
