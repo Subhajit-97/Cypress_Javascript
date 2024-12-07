@@ -15,7 +15,7 @@ module.exports = defineConfig({
     timestamp: "longDate",
     html: true,
     json: false,
-    overwrite: false,
+    overwrite: true,
     code: false,
     autoOpen: false,
     embeddedScreenshots: true,
